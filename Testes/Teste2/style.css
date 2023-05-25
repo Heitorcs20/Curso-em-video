@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Principal';
+    src: url(kg_primary_italics/KGPrimaryItalics.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root{
+
+    --cor0:#ffffff;
+    --cor1:#000000;
+    --cor2:#ff8800;
+    --cor3:#B0A37F;
+    --cor4:#12B829;
+    --cor5:#B78700;
+    --cor6:#2747B8;
+    --cor7:#B81A42;
+
+    --font-padrao:'Principal';
+}
+
+p{
+    text-indent: 20px;
+    line-height: 1.4em;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+header{
+    padding-top: 15px;
+    height: 35px;
+    background-color: black;
+    text-align: center;
+}
+
+header a{
+    margin-top: 15px;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 1em;
+}
+
+main{
+    font-family:var(--font-padrao) ;
+    font-size: 1.3em;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2px 15px 30px 15px;
+    background-color: var(--cor3);
+    border-radius: 0px 0px 22px 22px;
+    margin-bottom: 2px;
+    box-shadow: 1px 1px 10px black;
+}
+
+main h1{
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+main h2{
+    font-size: 1.6em;
+    margin: 15px 0;
+}
+
+main h3{
+    text-decoration: underline;
+    padding: 20px 0px;
+}
+
+main img{
+    display: block;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+main img.pequena{
+    width: 350px;
+    height: 350px;
+}
+
+main ul{
+    list-style: none;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main ul li::before{
+    content: '\1F58A\00A0';
+}
+
+main ol{
+    margin-left: 20px;
+}
+
+main ol a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+main ol a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+div.video{
+    background-color: var(--cor5);
+    padding: 15px 15px 15px 15px;
+    padding-bottom: 75%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    width: 93%;
+    height: 95%;
+}
+
+footer{
+    text-align: center;
+    height: 30px;
+    background-color: var(--cor1);
+    color: white;
+    padding: 20px;
+}
