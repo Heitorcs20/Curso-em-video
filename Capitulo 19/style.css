@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+div.quadrado {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+body{
+    background-image: url(imagens/wallpaper002.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#qd1 {
+    background-color: skyblue;
+}
+
+div#qd2 {
+    background-image: linear-gradient(to bottom, yellow , orange);
+}
+
+div#qd3 {
+    background-image: url(imagens/pattern001.png);
+}
+
+div#qd4{
+    background-image: linear-gradient(to right, green, blue,red);
+}
+
+div#qd5{
+    background-image: linear-gradient(to top, yellow,rgb(255, 0, 140));
+}
+
+div#qd6{
+    background-image:url(imagens/pattern004.png);
+}
+
+div#qd7{
+    background-image:url(imagens/pattern003.png);
+    background-repeat: repeat-x repeat-y;
+}
+
